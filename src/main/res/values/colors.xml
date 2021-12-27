@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_primary">@color/san_marino</color>
+    <color name="color_primary_variant">@color/indigo</color>
+    <color name="color_secondary">@color/portage</color>
+    <color name="color_secondary_variant">@color/zircon</color>
+    <color name="color_background">@color/hint_of_red</color>
+    <color name="color_surface">@color/titan_white</color>
+    <color name="color_error">@color/pink_800</color>
+
+    <!--  On colors  -->
+    <color name="color_on_primary">@color/white</color>
+    <color name="color_on_secondary">@color/dove_gray</color>
+    <color name="color_on_background">@color/dorado</color>
+    <color name="color_on_surface">@color/black</color>
+    <color name="color_on_error">@color/white</color>
+    <color name="color_body_text">@color/grey_600</color>
+
+
+    <!--  Main colors  -->
+    <color name="san_marino">#4557AA</color>
+    <color name="indigo">#6374C3</color>
+    <color name="portage">#97A9FF</color>
+    <color name="zircon">#ECEFFF</color>
+
+    <color name="wild_blue_yonder">#727DAF</color>
+    <color name="wistful">#A2ACE1</color>
+    <color name="french_gray">#BABDCC</color>
+
+    <!--  Background & surface  -->
+    <color name="hint_of_red">#FCFBFB</color>
+    <color name="titan_white">#FDFDFF</color>
+
+    <color name="ebony">#0D122B</color>
+    <color name="cloud_burst">#1C2449</color>
+
+    <!--  Error colors  -->
+    <color name="pink_300">#CF6679</color>
+    <color name="pink_800">#B00020</color>
+
+    <!--  Component colors  -->
+    <color name="filters_background">@color/zircon</color>
+    <color name="negative">@color/flamingo</color>
+    <color name="symbol">@color/martini</color>
+    <color name="increase">@color/java</color>
+    <color name="decrease">@color/flamingo</color>
+
+    <!-- extra components-->
+    <color name="divider">#14212121</color>
+
+    <!--  Text colors  -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="martini">#979797</color>
+    <color name="java">#13B2B2</color>
+    <color name="flamingo">#EB5E2C</color>
+    <color name="grey_600">#717171</color>
+
+    <color name="dove_gray">#686868</color>
+    <color name="dorado">#585858</color>
+
+
+</resources>

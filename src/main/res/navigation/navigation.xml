@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/countriesListFragment">
+
+
+    <fragment
+        android:id="@+id/countriesListFragment"
+        android:name="com.application.coin_ranking.features.country.list.CountriesListFragment"
+        android:label="CountryListFragment"
+        tools:layout="@layout/fragment_countries_list">
+        <action
+            android:id="@+id/action_countryListFragment_to_Detail"
+            app:destination="@id/countryDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="com.application.coin_ranking.features.country.detail.CountryDetailFragment"
+        android:label="CryptocurrencyDetailFragment"
+        tools:layout="@layout/fragment_country_detail">
+
+        <argument android:name="country"
+            app:argType="com.application.coin_ranking.data.model.Country" />
+    </fragment>
+
+
+</navigation>

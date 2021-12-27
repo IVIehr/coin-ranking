@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Components-->
+
+    <!--Bottom Sheets-->
+    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">?attr/colorSurface</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">
+            @android:color/transparent
+        </item>
+    </style>
+
+    <style name="Widget.MyTheme.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">?attr/shapeAppearanceLargeComponent</item>
+    </style>
+
+    <!--Navigation Drawer-->
+    <style name="Widget.MyTheme.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextAppearance">?attr/textAppearanceSubtitle1</item>
+        <item name="itemIconTint">?attr/colorPrimary</item>
+        <item name="itemIconPadding">@dimen/spacing_3x</item>
+        <item name="itemPadding">@dimen/spacing_base</item>
+        <item name="dividerPadding">@dimen/spacing_2x</item>
+    </style>
+
+    <style name="Widget.MyTheme.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MyTheme.Toolbar</item>
+    </style>
+
+    <style name="ThemeOverlay.MyTheme.Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:textColorPrimary">@color/color_on_primary</item>
+        <item name="android:textColorSecondary">@color/color_on_primary</item>
+    </style>
+
+    <!--TabLayout-->
+    <style name="Widget.MyTheme.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabTextAppearance">@style/TextAppearance.MyTheme.Subtitle1</item>
+        <item name="tabBackground">@color/color_background</item>
+    </style>
+
+    <!--Chips-->
+    <style name="Widget.MyTheme.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:minHeight">@dimen/spacing_14x</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="checkedIconTint">?attr/colorOnBackground</item>
+        <item name="closeIconEndPadding">@dimen/spacing_4x</item>
+        <item name="chipIconSize">@dimen/spacing_4x</item>
+        <item name="closeIconTint">?attr/colorOnBackground</item>
+        <item name="textStartPadding">@dimen/spacing_4x</item>
+        <item name="android:textAppearance">@style/TextAppearance.MyTheme.chip</item>
+        <item name="chipBackgroundColor">@color/filters_background</item>
+    </style>
+
+    <!--  Spinner  -->
+    <style name="spinner_style" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/round_border</item>
+        <item name="android:textAlignment">center</item>
+        <!--    popup    -->لام
+        <item name="android:popupBackground">@color/color_surface</item>
+        <item name="android:dropDownHeight">@dimen/spacing_14x</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@color/filters_background</item>
+    </style>
+
+</resources>
